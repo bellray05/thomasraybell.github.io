@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Hovering over text displays image</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+  </script>
+   <script>
+jQuery(document).ready(function(){
+  $(window).scroll(function(e){
+  	parallaxScroll();
+	});
+	 
+	function parallaxScroll(){
+		var scrolled = $(window).scrollTop();
+		$('#parallax-bg-1').css('top',(0-(scrolled*.25))+'px');
+		$('#parallax-bg-2').css('top',(0-(scrolled*.4))+'px');
+		$('#parallax-bg-3').css('top',(0-(scrolled*.75))+'px');
+	}
+ 
+ }); </script>
+</head>
+
+<body>
+<ul class="navigation">
+    <li><a href="#"><h4>Raybell</h4></a></li>
+  <li><a href="#"><span style="font-size:40px;cursor:pointer; position: fixed; top: 0; width: 100%;" onclick="openNav()"> <div class="line">&#9776;</div></span></a></li>
+</ul>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">Work</a>
+  <a href="#">Considerations</a>
+  <a href="#">Contact</a>
+</div>
+<div class="newEquipList">
+<div class="newEquipList-left">
+<div id="newEquipHover">
+<div id="common">   
+         <a href="http://www.deere.com/wps/dcom/en_US/products/equipment/articulated_dump_trucks/articulated_dump_trucks.page?" target="_blank">Common Projects<span><img src="http://boydwp.lottmandesign.com/wp-content/uploads/2013/11/Deere_ADT_big.jpg"  /></span></a></div><br />
+<a href="http://www.deere.com/wps/dcom/en_US/products/equipment/backhoe_loaders/backhoe_loaders.page?" target="_blank">Backhoe Loaders <span><img src="http://boydwp.lottmandesign.com/wp-content/uploads/2013/11/backhoe.jpg" alt="john deere backhoes - cl boyd oklahoma" /></span> </a><br /><br />
+<a href="http://www.deere.com/wps/dcom/en_US/products/equipment/compact_track_loaders/compact_track_loaders.page?" target="_blank">Compact Track Loaders <span><img src="http://boydwp.lottmandesign.com/wp-content/uploads/2013/11/compacttrack.jpg" alt="john deere compact track loaders - cl boyd oklahoma" /></span> </a><br />
+																		<br />
+<a href="http://www.deere.com/wps/dcom/en_US/products/equipment/crawler_dozers/crawler_dozers.page?" target="_blank">Crawler Dozers <span><img src="http://boydwp.lottmandesign.com/wp-content/uploads/2013/11/crawlerdozer.jpg" alt="john deere crawler dozers - cl boyd oklahoma" /></span> </a><br /><br />
+<a href="http://www.deere.com/wps/dcom/en_US/products/equipment/crawler_loaders/crawler_loaders.page?" target="_blank">Crawler Loaders<span><img src="http://boydwp.lottmandesign.com/wp-content/uploads/2013/11/crawlerloader.jpg" alt="john deere crawler loaders - cl boyd oklahoma" /></span> </a><br />
+																		<br />
+<a href="http://www.deere.com/wps/dcom/en_US/products/equipment/excavators/excavators.page?" target="_blank">Excavators<span><img src="http://boydwp.lottmandesign.com/wp-content/uploads/2013/11/excavator.jpg" alt="john deere excavators - cl boyd oklahoma" /></span> </a> <br />
+																		<br />
+<a href="http://www.deere.com/wps/dcom/en_US/products/equipment/wheel_loaders/wheel_loaders.page?" target="_blank">4WD Loaders <span><img src="http://boydwp.lottmandesign.com/wp-content/uploads/2013/11/4wdLoader.jpg" alt="john deere wheel loaders - cl boyd oklahoma" /></span> </a><br />
+																		<br />
+																</div>
+														</div>
+
+												</div>
+  
+  
+</body>
+</html>
